@@ -24,5 +24,5 @@ spec:
           servicePort: 8081
       - path: /debjyoti/app
         backend:
-          serviceName: app-332488
+          serviceName: app-pipeline-332488
           servicePort: 8090
