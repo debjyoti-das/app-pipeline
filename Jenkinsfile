@@ -26,13 +26,13 @@ node {
         sh "mvn clean install"
     }
 
-    stage('Sonar'){
-        try {
-            sh "mvn sonar:sonar -Dsonar.host.url=http://52.143.7.186/debjyoti/sonarqube -Dsonar.login=c8554f519b55dd83d85968887427498f3d30daca"
-        } catch(error){
-            echo "The sonar server could not be reached ${error}"
-        }
-     }
+    //stage('Sonar'){
+    //    try {
+    //        sh "mvn sonar:sonar -Dsonar.host.url=http://52.143.7.186/debjyoti/sonarqube -Dsonar.login=c8554f519b55dd83d85968887427498f3d30daca"
+    //    } catch(error){
+    //        echo "The sonar server could not be reached ${error}"
+    //    }
+    // }
 
 
     stage('Build and Push to Docker Registry'){

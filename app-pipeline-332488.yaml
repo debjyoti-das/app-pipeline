@@ -26,11 +26,11 @@ spec:
         image: debjyotidas/app-pipeline-332488:1.0.0
         resources:
           requests:
-            cpu: 25m
-            memory: 256Mi
-          limits:
-            cpu: 50m
+            cpu: 100m
             memory: 1024Mi
+          limits:
+            cpu: 1000m
+            memory: 2048Mi
 ---
 apiVersion: v1
 kind: Service
